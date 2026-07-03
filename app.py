@@ -13,7 +13,7 @@ def exibir_opcoes():
     print('1. Cadastrar restaurante')
     print('2. Listar restaurantes')
     print('3. Alterar status do restaurante')
-    print('4. Sair\n')
+    print('4. Exit\n')
 
 def cadastrar_restaurante():
     '''Função que recebe o nome e a categoria do restaurante e adiciona na lista de restaurantes'''
