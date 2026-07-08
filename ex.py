@@ -516,11 +516,33 @@
 
 #============================================================
 
+# import re
+
+# nome = input('Digite o nome do cliente: ')
+
+# if re.fullmatch(r'[A-Z][a-z]*', nome):
+#     print('Nome válido.')
+# else:
+#     print('Nome inválido.')
+
+#=============================================================
+
+# import re
+
+# cpf = input('Digite o CPF no formato XXX.XXX.XXX-XX: ')
+
+# if re.fullmatch(r'\d{3}\.\d{3}\.\d{3}-\d{2}', cpf):
+#     print('CPF válido.')
+# else:
+#     print('CPF inválido.')
+
+#=============================================================
+
 import re
 
-nome = input('Digite o nome do cliente: ')
+titulo = input('Digite o título do livro: ')
+letra = input('Digite a letra inicial para a pesquisa: ')
 
-if re.fullmatch(r'[A-Z][a-z]*', nome):
-    print('Nome válido.')
-else:
-    print('Nome inválido.')
+letra_inicial = re.findall(rf'\b{letra}[a-zà-ÿ]*', titulo, re.IGNORECASE)
+
+print(letra_inicial)
