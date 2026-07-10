@@ -52,3 +52,48 @@
 
 #===============================================================================
 
+# eventos_registrados = ['Encerramento','Palestra 3', 'Palestra 2', 'Abertura']
+
+# eventos_registrados.reverse()
+
+# print(f'Ordem corrigida: {eventos_registrados}')
+
+#===============================================================================
+
+# lista = ['Ana', 'Carlos', 'Pedro']
+# print(f'Lista original: {lista}')
+
+# incorreto = input('Digite o nome incorreto: ')
+ 
+# if incorreto in lista:
+#     correto = input('Digite o nome correto: ')
+#     posicao = lista.index(incorreto)
+#     lista.remove(incorreto)
+#     lista.insert(posicao, correto)
+#     print(f'O nome {incorreto} foi substituído por {correto}.')
+#     print(f'Lista atualizada: {lista}')
+# else:
+#     print(f'Nome não encontrado')
+
+#===============================================================================
+
+# pedidos = list(input('Pedidos feitos (separados por vírgula): ').split(', '))
+
+# pedidos.pop()
+
+# print(f'Pedidos finais: {pedidos}')
+
+#===============================================================================
+
+# notas = [float(nota) for nota in input('Digite as notas dos alunos (separadas por vírgula): ').split(', ')]
+# media = sum(notas) / len(notas)
+# print(f'Média final da turma: {media:.2f}')
+
+#===============================================================================
+# dados = input('Digite os dados do aluno no formato Nome, idade, nota separados por vírgula: ').split(', ')
+
+# for i in range(0, len(dados), 3):
+#     nome, idade, nota = dados[i], int(dados[i + 1]), float(dados[i + 2])
+#     print(f'Aluno: {nome}')
+#     print(f'Idade: {idade}')
+#     print(f'Nota: {nota}\n')
