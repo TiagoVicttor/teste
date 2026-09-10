@@ -78,7 +78,59 @@
 
 # print(f'Senha gerada: {gerar_senha()}')
 
+#_____________________________________________________________________________________
+
+# import random
+
+# def jokempo():
+#     opcoes = ['pedra', 'papel', 'tesoura']
+#     computador = random.choice(opcoes)
+#     jogador = input('Escolha pedra, papel ou tesoura: ').lower()
+
+#     if jogador not in opcoes:
+#         print('Opção inválida. Tente novamente.')
+#         return jokempo()
+
+#     print(f'computador escolheu: {computador}')
+
+#     if computador == jogador: 
+#         print(f'Empate!')
+
+#     elif (computador == 'pedra' and jogador == 'tesoura') or (computador == 'papel' and jogador == 'pedra') or (computador == 'tesoura' and jogador == 'papel'):
+#         print('Computador venceu!')
+        
+#     else:
+#         print('Jogador venceu!')
+
+# jokempo()
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 import random
 
-def jokempo():
-    opcoes = 
+
+def adivinha():
+    numero_secreto = random.randint(1,100)
+    tentativas = 0
+
+    while True: 
+
+        numero = int(input('Tente adivinhar o número (1-100): '))
+
+        if numero < 1 or numero > 100:
+            print('Entrada inválida: Número fora do intervalo! Digite um número entre 1 e 100.')
+            raise ValueError('Número fora do intervalo! Digite um número entre 1 e 100')
+
+        if numero < numero_secreto:
+            print('Muito Baixo! Tente novamente.')
+            tentativas += 1
+
+        elif numero > numero_secreto:
+            print('Muito Alto! Tente novamente.')
+            tentativas += 1
+
+        else:
+            print(f'Parabéns! Você acertou o número {numero_secreto} em {tentativas} tentativas.')
+            break
+
+adivinha()
